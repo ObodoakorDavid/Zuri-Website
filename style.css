@@ -37,7 +37,10 @@ body {
 .first_section p {
   color: gray;
   line-height: 24px;
+  padding: 10px;
   padding-bottom: 100px;
+  max-width: 80ch;
+  margin: 0 auto;
 }
 
 .first_section span {
@@ -60,6 +63,12 @@ body {
   margin-bottom: 20px;
 }
 
+.first_section a:nth-child(1):hover {
+  background-color: white;
+  border: 1px solid #e7332b;
+  color: #e7332b;
+}
+
 .first_section a:nth-child(2) {
   color: #e7332b;
   border: 1px solid #e7332b;
@@ -67,6 +76,11 @@ body {
   padding: 15px 25px;
   max-width: 250px;
   margin: 0 auto;
+}
+
+.first_section a:nth-child(2):hover {
+  background-color: #e7332b;
+  color: white;
 }
 
 .second_section {
@@ -99,6 +113,7 @@ body {
   margin: 0 5%;
   text-align: left;
   color: #514949;
+  z-index: 1;
 }
 
 .second_section div div img {
@@ -114,24 +129,28 @@ body {
   color: #e7332b;
 }
 
+.bg_img {
+  display: none;
+}
+
 footer {
   text-align: center;
-  margin: 80px 0;
+  margin-top: 200px;
   margin-bottom: 20px;
   padding: 0 5%;
+  color: #514949;
 }
 
 footer > div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 footer div > img {
-  margin-bottom: 40px;
-}
-.logos {
-  margin: 10px 0;
+  margin-bottom: 15px;
+  width: 150px;
+  margin: 0 auto;
 }
 
 .logos img {
@@ -142,15 +161,20 @@ footer div > img {
 footer h2 {
   padding-bottom: 10px;
   color: #514949;
+  font-size: 16px;
 }
 
 .contact p {
-  margin-bottom: 10px;
   max-width: 30ch;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: small;
+  /* font-weight: bold; */
 }
 
 .links p {
   color: #e7332b;
+  font-size: small;
 }
 
 .links p:nth-child(2) {
@@ -159,11 +183,19 @@ footer h2 {
 
 footer div a {
   color: #e7332b;
+  font-size: small;
 }
 
 .hr {
-  margin: 30px 0;
+  margin-top: 80px;
+  margin-bottom: 40px;
   color: #514949;
+  opacity: 0.2;
+}
+
+.copyright {
+  margin-bottom: 80px;
+  font-weight: bold;
 }
 
 /* ===================== Media Queries ============= */
@@ -171,7 +203,7 @@ footer div a {
 @media screen and (min-width: 768px) {
   .first_section div {
     flex-direction: row;
-    gap: 20px;
+    gap: 7%;
   }
 
   .first_section a:nth-child(1) {
@@ -185,6 +217,10 @@ footer div a {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+  }
+
+  footer div > img {
+    margin: 0;
   }
 }
 
@@ -200,4 +236,29 @@ footer div a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .second_section > div {
+    position: relative;
+  }
+
+  .bg_img {
+    display: block;
+    position: absolute;
+    width: 300px;
+  }
+
+  .bg_img_left {
+    top: -15%;
+    left: -80px;
+  }
+  .bg_img_right {
+    top: -15%;
+    right: -80px;
+  }
+}
+
 /* ===================== LandingPage Ends here ============= */
+
+/* ===================== Industry Exp Starts here ============= */
+
+/* ===================== Industry Exp Ends here ============= */
