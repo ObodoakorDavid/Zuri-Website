@@ -12,6 +12,8 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* ===================== LandingPage Starts here ============= */
+
 .first_section {
   padding-bottom: 80px;
 }
@@ -45,6 +47,8 @@ body {
 .first_section div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .first_section a:nth-child(1) {
@@ -90,11 +94,11 @@ body {
 }
 
 .second_section div div {
-    background-color: #fffafa;
-    padding: 30px 20px;
-    margin: 0 5%;
-    text-align: left;
-    color: #514949;
+  background-color: #fffafa;
+  padding: 30px 30px;
+  margin: 0 5%;
+  text-align: left;
+  color: #514949;
 }
 
 .second_section div div img {
@@ -104,3 +108,96 @@ body {
 .second_section div div p {
   padding-bottom: 30px;
 }
+
+.second_section div div a {
+  text-decoration: none;
+  color: #e7332b;
+}
+
+footer {
+  text-align: center;
+  margin: 80px 0;
+  margin-bottom: 20px;
+  padding: 0 5%;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer div > img {
+  margin-bottom: 40px;
+}
+.logos {
+  margin: 10px 0;
+}
+
+.logos img {
+  width: 20px;
+  margin: 0 2px;
+}
+
+footer h2 {
+  padding-bottom: 10px;
+  color: #514949;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  max-width: 30ch;
+}
+
+.links p {
+  color: #e7332b;
+}
+
+.links p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+footer div a {
+  color: #e7332b;
+}
+
+.hr {
+  margin: 30px 0;
+  color: #514949;
+}
+
+/* ===================== Media Queries ============= */
+
+@media screen and (min-width: 768px) {
+  .first_section div {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .first_section a:nth-child(1) {
+    margin: 0;
+  }
+  .first_section a:nth-child(2) {
+    margin: 0;
+  }
+
+  footer > div {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .second_section div {
+    flex-direction: row;
+    gap: 20px;
+    margin: 30px 5%;
+  }
+
+  .second_section div div {
+    margin: 0;
+  }
+}
+
+/* ===================== LandingPage Ends here ============= */
