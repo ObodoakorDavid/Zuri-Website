@@ -261,4 +261,110 @@ footer div a {
 
 /* ===================== Industry Exp Starts here ============= */
 
+.ie_section1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+}
+
+.ie_section1 span span {
+  display: none;
+}
+
+.hire_btn {
+  color: white;
+  background-color: #e7332b;
+  border: none;
+  padding: 10px 30px;
+  border-bottom-right-radius: 10px;
+}
+
+.ie_section1 span a {
+  text-decoration: none;
+  color: #514949;
+}
+
+.ie_section1 span a:nth-child(1) {
+  position: relative;
+}
+.ie_section1 span a:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20%;
+  margin-top: 10px;
+  background-color: #e7332b;
+  padding: 1.5px 30px;
+}
+
+.ie_section2 {
+  text-align: center;
+}
+
+.ie_section2 h1 {
+  font-size: xx-large;
+  position: relative;
+  padding: 0 10px;
+  padding-bottom: 30px;
+  max-width: 20ch;
+  margin: 0 auto;
+}
+
+.ie_section2 h1::after {
+  content: url(./industryPageImages/thick2.svg);
+  position: absolute;
+  left: 39%;
+  top: 45%;
+  width: 20px;
+  height: 10px;
+}
+
+/* .ie_section2 h1::after{
+  content: url(./industryPageImages/thick2.svg);
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  width: 20px;
+  height: 10px;
+} */
+
+.ie_section2 span {
+  color: #e7332b;
+}
+
+.ie_section2 img {
+  width: 90%;
+}
+
+/* ===================== Media Queries ============= */
+
+@media screen and (min-width: 425px) {
+  .ie_section2 h1 {
+    max-width: 40ch;
+  }
+  .ie_section2 h1::after {
+    left: 73%;
+    top: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .ie_section2 h1::after {
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ie_section1 {
+    padding: 10px 5%;
+  }
+
+  .ie_section1 span span {
+    display: inline-flex;
+    min-width: 350px;
+    justify-content: space-around;
+  }
+}
+
 /* ===================== Industry Exp Ends here ============= */
