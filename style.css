@@ -769,7 +769,7 @@ body {
   top: -20%;
 }
 
-.span2 a {
+.btn {
   text-decoration: none;
   padding: 10px 20px;
   padding-left: 30px;
@@ -784,14 +784,191 @@ body {
   position: relative;
 }
 
+/* ===================== t_section1 ============= */
+
+.t_main {
+  background-color: rgb(255, 253, 245);
+}
+
+.t_section1 {
+  padding: 40px 30px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.t_section1 p:nth-of-type(1) {
+  color: #e7332b;
+  margin-bottom: 10px;
+}
+.t_section1 p:nth-of-type(2) {
+  color: #514949;
+  margin-bottom: 40px;
+}
+
+.t_section1 h1 {
+  padding-bottom: 40px;
+  font-size: xx-large;
+}
+
+.lady {
+  width: 100%;
+  mix-blend-mode: darken;
+}
+
+.male1 {
+  display: none;
+  mix-blend-mode: darken;
+}
+
+.t_section1 div {
+  position: relative;
+}
+
+.t_section1 .line {
+  width: 30%;
+  position: absolute;
+  top: 27%;
+  right: 6%;
+}
+
+.maleface {
+  display: none;
+}
+
+.section1wire {
+  position: absolute;
+  width: 25%;
+  bottom: -25%;
+}
+/* ===================== t_section2 ============= */
+.t_section2 {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.t_section2 div {
+  padding: 40px 0;
+}
+
+.t_section2 h2 {
+  padding-bottom: 40px;
+  color: #1b1a20;
+}
+.t_section2 p {
+  color: #514949;
+}
+.t_section2 img {
+  padding-bottom: 40px;
+  width: 60%;
+  margin: 40px;
+  mix-blend-mode: darken;
+}
+.t_section2 a {
+  color: #43b97f;
+}
+
+.t_section2 hr {
+  border-width: 0px 0px thin;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
 /* ===================== Media Queries ============= */
 
+@media screen and (min-width: 360px) {
+  .t_section1 .line {
+    width: 30%;
+    top: 23%;
+    right: 5%;
+  }
+
+  .t_section1 h1 {
+    font-size: xx-large;
+  }
+}
+@media screen and (min-width: 420px) {
+  .t_section1 .line {
+    width: 30%;
+    top: 29%;
+    right: 20%;
+  }
+}
+@media screen and (min-width: 425px) {
+  .t_section1 .line {
+    width: 25%;
+    top: 29%;
+    right: 33%;
+  }
+  .section1wire {
+    width: 25%;
+    bottom: -35%;
+  }
+}
 @media screen and (min-width: 600px) {
-  .t_nav{
+  .t_nav {
     align-items: flex-start;
   }
   .ig4zuri_logo {
     width: 220px;
+  }
+
+  .t_section1 {
+    padding-bottom: 150px;
+  }
+
+  .t_section1 .line {
+    width: 20%;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+  }
+
+  .t_section1 h1 {
+    font-size: 39px;
+  }
+
+  .section1wire {
+    width: 15%;
+    bottom: -40%;
+    right: 10%;
+  }
+
+  .t_section2 img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .maleface {
+    display: block;
+    position: absolute;
+    width: 50px;
+    left: 10%;
+    bottom: -20%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .t_section2 div {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  .t_section2 h2 {
+    text-align: left;
+    padding: 0;
+  }
+  .t_section2 p {
+    text-align: right;
+    padding: 0;
+    max-width: 50%;
+  }
+
+  .t_section2 img {
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -804,5 +981,33 @@ body {
 
   .t_nav div {
     min-width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .male1 {
+    display: block;
+    width: 100%;
+  }
+
+  .lady {
+    width: 100%;
+  }
+  .t_section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .maleface {
+    left: -10%;
+    bottom: 5%;
+  }
+
+  .section1wire {
+    width: 25%;
+    bottom: -15%;
+    right: 23%;
   }
 }
