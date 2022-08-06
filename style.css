@@ -491,36 +491,43 @@ body {
 /* ===================== ie_footer ============= */
 
 .ie_footer {
-  padding: 50px 20px;
+  padding: 80px 20px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.ie_footer div:nth-of-type(1) img{
-  margin-bottom: 20px;
+  position: relative;
 }
 
-.footer_logos{
+.ie_footer .footer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ie_footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_logos {
   display: flex;
   gap: 15px;
   max-width: max-content;
   margin: 0 auto;
-
+  margin-bottom: 20px;
 }
-.footer_logos img{
+.footer_logos img {
   width: 30px;
 }
 
-.ie_footer div:nth-of-type(1){
-
+.ie_footer hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #514949;
+  border-width: 0px 0px thin;
+  border-style: solid;
 }
-
-
-
-
 
 /* ===================== Media Queries ============= */
 
@@ -573,6 +580,25 @@ body {
     text-align: center;
     max-width: 23ch;
     margin: 0 auto;
+  }
+
+  .ie_footer {
+    padding-bottom: 20px;
+  }
+
+  .ie_footer .footer_content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .ie_footer hr {
+    display: none;
+  }
+
+  .ie_footer > small {
+    position: absolute;
+    bottom: 13%;
+    left: 10%;
   }
 }
 
@@ -698,6 +724,85 @@ body {
   .item5 {
     flex: none;
   }
+
+  .ie_footer .footer_content {
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 /* ===================== Industry Exp Ends here ============= */
+
+.t_nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: rgb(255, 253, 245);
+}
+
+.t_nav div {
+  display: flex;
+  align-items: baseline;
+}
+
+.ig4zuri_logo {
+  width: 150px;
+}
+
+.span1 {
+  display: none;
+}
+
+.span1 a {
+  text-decoration: none;
+  color: #514949;
+}
+.thumbs {
+  width: 60px;
+  padding: 10px;
+  background-color: #e7332b;
+  border-radius: 30px;
+  position: absolute;
+  left: -25%;
+  top: -20%;
+}
+
+.span2 a {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-left: 30px;
+  background-color: #e7332b;
+  color: white;
+  border-radius: 30px;
+}
+
+.span2 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* ===================== Media Queries ============= */
+
+@media screen and (min-width: 600px) {
+  .t_nav{
+    align-items: flex-start;
+  }
+  .ig4zuri_logo {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .span1 {
+    display: flex;
+    min-width: 80%;
+    justify-content: space-around;
+  }
+
+  .t_nav div {
+    min-width: 80%;
+  }
+}
