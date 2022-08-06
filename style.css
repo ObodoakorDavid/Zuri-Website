@@ -133,7 +133,7 @@ body {
   display: none;
 }
 
-footer {
+.lp_footer {
   text-align: center;
   margin-top: 200px;
   margin-bottom: 20px;
@@ -141,15 +141,14 @@ footer {
   color: #514949;
 }
 
-footer > div {
+.lp_footer > div {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-footer div > img {
+.lp_footer div > img {
   margin-bottom: 15px;
-  width: 150px;
   margin: 0 auto;
 }
 
@@ -158,7 +157,7 @@ footer div > img {
   margin: 0 2px;
 }
 
-footer h2 {
+.lp_footer h2 {
   padding-bottom: 10px;
   color: #514949;
   font-size: 16px;
@@ -181,7 +180,7 @@ footer h2 {
   margin-bottom: 10px;
 }
 
-footer div a {
+.lp_footer div a {
   color: #e7332b;
   font-size: small;
 }
@@ -213,13 +212,13 @@ footer div a {
     margin: 0;
   }
 
-  footer > div {
+  .lp_footer > div {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
   }
 
-  footer div > img {
+  .lp_footer div > img {
     margin: 0;
   }
 }
@@ -275,7 +274,7 @@ footer div a {
 
 .btn {
   border: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-bottom-right-radius: 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -434,6 +433,95 @@ footer div a {
   color: #514949;
 }
 
+/* ===================== ie_section5 ============= */
+
+.ie_section5 {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: rgb(255, 248, 229);
+  position: relative;
+}
+
+.ie_section5 span {
+  color: #e7332b;
+}
+
+.ie_section5 h2 {
+  padding-bottom: 50px;
+}
+
+.flexbox_items img {
+  margin: 30px;
+}
+
+.flexbox_container {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flexbox_items {
+  background-color: white;
+  color: #514949;
+  padding: 20px;
+  border-bottom-right-radius: 16px;
+  flex: 1;
+  position: relative;
+}
+
+.flexbox_items:hover {
+  background-color: black;
+  color: white;
+}
+
+.flexbox_items p {
+  max-width: 30ch;
+  margin: 0 auto;
+}
+
+.rope {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/* ===================== ie_footer ============= */
+
+.ie_footer {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ie_footer div:nth-of-type(1) img{
+  margin-bottom: 20px;
+}
+
+.footer_logos{
+  display: flex;
+  gap: 15px;
+  max-width: max-content;
+  margin: 0 auto;
+
+}
+.footer_logos img{
+  width: 30px;
+}
+
+.ie_footer div:nth-of-type(1){
+
+}
+
+
+
+
+
 /* ===================== Media Queries ============= */
 
 @media screen and (min-width: 425px) {
@@ -498,6 +586,10 @@ footer div a {
     min-width: 350px;
     justify-content: space-around;
   }
+
+  .flexbox_items {
+    min-width: 300px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -528,6 +620,10 @@ footer div a {
   .ie_section4 h2 {
     text-align: left;
     margin: 0;
+  }
+
+  .flexbox_items {
+    min-width: 350px;
   }
 }
 
@@ -585,6 +681,22 @@ footer div a {
     column-gap: 20px;
     row-gap: 10px;
     flex-wrap: wrap;
+  }
+
+  .flexbox_container {
+    justify-content: center;
+  }
+
+  .flexbox_items {
+    min-width: 340px;
+    padding: 40px;
+  }
+
+  .item4 {
+    flex: none;
+  }
+  .item5 {
+    flex: none;
   }
 }
 
