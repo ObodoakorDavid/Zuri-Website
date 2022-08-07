@@ -1,4 +1,6 @@
 /** @format */
+@import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,9 +9,22 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Averta-BlackItalic", sans-serif;
+  font-family: "Averta-Black", sans-serif;
+  font-family: "Averta-Bold", sans-serif;
+  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "Averta-Extrathin", sans-serif;
+  font-family: "Averta-Light", sans-serif;
+  font-family: "Averta-Semibold", sans-serif;
+  font-family: "Averta-Thin", sans-serif;
+  font-family: "Averta-Regular", sans-serif;
+  font-family: "Averta-BoldItalic", sans-serif;
+  font-family: "Averta-ExtraBoldItalic", sans-serif;
+  font-family: "Averta-ExtrathinItalic", sans-serif;
+  font-family: "Averta-LightItalic", sans-serif;
+  font-family: "Averta-RegularItalic", sans-serif;
+  font-family: "Averta-SemiboldItalic", sans-serif;
+  font-family: "Averta-ThinItalic", sans-serif;
 }
 
 /* ===================== LandingPage Starts here ============= */
@@ -61,6 +76,7 @@ body {
   max-width: 250px;
   margin: 0 auto;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .first_section a:nth-child(1):hover {
@@ -76,6 +92,7 @@ body {
   padding: 15px 25px;
   max-width: 250px;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .first_section a:nth-child(2):hover {
@@ -1074,14 +1091,87 @@ body {
 
 /* ===================== t_section6 ============= */
 
-.t_section5 {
+.t_section6 {
   padding: 40px 30px;
   text-align: center;
 }
 
-/* ===================== t_section6 ============= */
+/* ===================== t_section7 ============= */
 
+.t_section7 {
+  padding: 40px 30px;
+}
 
+li {
+  /* padding-left: 10px; */
+  list-style-position: inside;
+}
+
+ul {
+  padding-bottom: 20px;
+}
+
+.program_grid {
+  display: grid;
+  gap: 20px;
+}
+
+.hour {
+  position: absolute;
+  width: 19%;
+  right: 5%;
+  bottom: 8%;
+}
+.hour1 {
+  width: 29%;
+}
+.hour2 {
+  width: 49%;
+}
+
+.program_grid_items > p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.program_grid_items > p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
+.program_grid_items div > p {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.program_grid_items div img{
+  width: 15px;
+  margin-left: 5px;
+}
+
+.program_grid_items a {
+  color: white;
+}
+
+.program_grid_items li {
+  padding-bottom: 5px;
+}
+
+.sep::marker {
+ content: '•';
+ color: red;
+ margin-right: 10px;
+}
+
+.program_grid_items {
+  position: relative;
+  color: white;
+  background-color: #1b1a20;
+  border: 1px solid;
+  border-radius: 65px;
+  padding: 64px 48px;
+  box-shadow: 0 31px 60px rgba(231, 51, 43, 0.2);
+}
 
 /* ===================== Media Queries ============= */
 
@@ -1228,7 +1318,7 @@ body {
     width: 120px;
   }
 
-  .here_grid{
+  .here_grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1289,7 +1379,7 @@ body {
     column-gap: 20%;
   }
 
-  .here_grid{
+  .here_grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
