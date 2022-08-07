@@ -851,16 +851,15 @@ body {
 }
 
 .t_section2 h2 {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   color: #1b1a20;
 }
 .t_section2 p {
   color: #514949;
 }
 .t_section2 img {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   width: 60%;
-  margin: 40px;
   mix-blend-mode: darken;
 }
 .t_section2 a {
@@ -872,6 +871,84 @@ body {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.12);
 }
+/* ===================== t_section3 ============= */
+
+.t_section3 {
+  padding: 40px 30px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.t_section3 > img {
+  width: 15%;
+  position: relative;
+  right: 0%;
+}
+
+.why_grid {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  text-align: left;
+}
+
+.why_items {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+}
+
+.why_items img {
+  position: absolute;
+  width: 35%;
+  top: -0.5%;
+  right: -0.5%;
+}
+
+.why_items p:nth-of-type(1) {
+  font-weight: bolder;
+  font-size: 48px;
+}
+.why_items p:nth-of-type(2) {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 11ch;
+}
+
+.why_item1 {
+  background-color: #e7332b;
+  color: white;
+}
+
+.why div div {
+  text-align: left;
+}
+
+.why p:nth-of-type(1) {
+  color: #e7332b;
+  padding-bottom: 5px;
+}
+.why h2 {
+  padding-bottom: 40px;
+}
+
+.star {
+  display: none;
+}
+.section3wire {
+  width: 15%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/* ===================== t_section 4 ============= */
+
+
 
 /* ===================== Media Queries ============= */
 
@@ -936,6 +1013,17 @@ body {
   .t_section2 img {
     width: 45%;
   }
+
+  .why_items p:nth-of-type(1) {
+    font-size: 52px;
+  }
+  .why_items p:nth-of-type(2) {
+    font-size: 42px;
+  }
+
+  .why_items img {
+    width: 33%;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -969,6 +1057,24 @@ body {
   .t_section2 img {
     padding: 0;
     margin: 0 auto;
+  }
+
+  .why_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .star {
+    display: block;
+    mix-blend-mode: darken;
+    width: 30%;
+    padding: 40px;
+  }
+
+  .why {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    padding-bottom: 40px;
   }
 }
 
@@ -1009,5 +1115,9 @@ body {
     width: 25%;
     bottom: -15%;
     right: 23%;
+  }
+
+  .why_grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
