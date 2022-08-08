@@ -31,7 +31,7 @@ body {
 /* ===================== LandingPage Starts here ============= */
 
 .first_section {
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 
 .first_section {
@@ -103,12 +103,14 @@ body {
 
 .second_section {
   text-align: center;
+  padding-top: 80px;
 }
 
 .second_section > p:nth-child(1) {
   color: #e7332b;
   padding-bottom: 20px;
   margin-top: 80px;
+  font-size: small;
 }
 .second_section > p:nth-child(2) {
   font-size: 24px;
@@ -186,7 +188,6 @@ body {
   margin: 0 auto;
   margin-bottom: 10px;
   font-size: small;
-  /* font-weight: bold; */
 }
 
 .links p {
@@ -200,6 +201,7 @@ body {
 
 .lp_footer div a {
   color: #e7332b;
+  text-decoration: none;
   font-size: small;
 }
 
@@ -441,7 +443,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   column-gap: 20px;
   row-gap: 10px;
-  position: relative;
 }
 
 .container p {
@@ -450,12 +451,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 60px hsla(0, 0%, 48%, 0.16);
   color: #787878;
-  transition: ease-in-out 0.8;
+  transition: transform 0.4s ease-in-out;
 }
 
 .container p:hover {
-  position: relative;
-  top: -20%;
+  transform: translate(0px, -10px);
 }
 
 /* ===================== ie_section5 ============= */
@@ -473,6 +473,7 @@ body {
 
 .ie_section5 h2 {
   padding-bottom: 50px;
+  font-size: xx-large;
 }
 
 .flexbox_items img {
@@ -785,18 +786,18 @@ body {
   color: #514949;
 }
 .thumbs {
-  width: 60px;
+  width: 70px;
   padding: 10px;
   background-color: #e7332b;
-  border-radius: 30px;
+  border-radius: 40px;
   position: absolute;
-  left: -25%;
-  top: -20%;
+  left: -33%;
+  top: -25%;
 }
 
 .btn2 {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0.8em 2em;
   padding-left: 30px;
   background-color: #e7332b;
   color: white;
@@ -850,10 +851,10 @@ body {
 }
 
 .t_section1 .line {
-  width: 30%;
+  width: 33%;
   position: absolute;
-  top: 27%;
-  right: 6%;
+  top: 50%;
+  right: 0%;
 }
 
 .maleface {
@@ -863,7 +864,7 @@ body {
 .section1wire {
   position: absolute;
   width: 25%;
-  bottom: -25%;
+  bottom: -45%;
 }
 /* ===================== t_section2 ============= */
 .t_section2 {
@@ -1064,6 +1065,7 @@ body {
   box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
   padding: 40px;
   text-align: left;
+  transition: transform 0.4s ease-in-out;
 }
 
 .here_grid_items p:nth-of-type(1) {
@@ -1102,12 +1104,27 @@ body {
 .t_section6 {
   padding: 40px 30px;
   text-align: center;
+  position: relative;
 }
 
 .t_section6 hr {
   border-width: 0px 0px thin;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.12);
+}
+
+.t_section6 img {
+  width: 23%;
+  position: relative;
+  right: 30%;
+}
+
+.t_section6 > p:nth-of-type(1){
+  color: #e7332b;
+}
+.t_section6 > p:nth-of-type(2){
+  padding-top: 5px;
+  padding-bottom: 50px;
 }
 
 /* ===================== t_section7 ============= */
@@ -1338,7 +1355,7 @@ ul {
 @media screen and (min-width: 360px) {
   .t_section1 .line {
     width: 30%;
-    top: 23%;
+    top: 50%;
     right: 5%;
   }
 
@@ -1349,19 +1366,14 @@ ul {
 @media screen and (min-width: 420px) {
   .t_section1 .line {
     width: 30%;
-    top: 29%;
-    right: 20%;
+    top: 53%;
+    right: 10%;
   }
 }
 @media screen and (min-width: 425px) {
-  .t_section1 .line {
-    width: 25%;
-    top: 29%;
-    right: 33%;
-  }
   .section1wire {
     width: 25%;
-    bottom: -35%;
+    bottom: -45%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -1377,10 +1389,8 @@ ul {
   }
 
   .t_section1 .line {
-    width: 20%;
-    position: absolute;
-    top: 25%;
-    right: 25%;
+    top: 55%;
+    right: 15%;
   }
 
   .t_section1 h1 {
@@ -1389,12 +1399,16 @@ ul {
 
   .section1wire {
     width: 15%;
-    bottom: -40%;
+    bottom: -50%;
     right: 10%;
   }
 
   .t_section2 img {
     width: 45%;
+  }
+
+  .lady {
+    width: 76%;
   }
 
   .why_items p:nth-of-type(1) {
@@ -1410,6 +1424,10 @@ ul {
 }
 
 @media screen and (min-width: 700px) {
+  .t_section1 .line {
+    top: 50%;
+    right: 15%;
+  }
   .maleface {
     display: block;
     position: absolute;
@@ -1489,6 +1507,12 @@ ul {
   .curve22 {
     width: 15%;
   }
+
+  .section1wire {
+    width: 12%;
+    bottom: -50%;
+    right: 15%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -1512,6 +1536,12 @@ ul {
   .t_section2 img {
     padding: 0;
     margin: 0 auto;
+  }
+
+  .section1wire {
+    width: 10%;
+    bottom: -50%;
+    right: 10%;
   }
 
   .why_grid {
@@ -1584,6 +1614,11 @@ ul {
     margin: 0 5%;
     padding: 100px 20%;
   }
+
+  .t_section1 .line {
+    width: 20%;
+    right: 25%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .male1 {
@@ -1644,5 +1679,18 @@ ul {
 
   .program_grid {
     max-width: 1000px;
+  }
+
+  .t_section1 .line {
+    width: 33%;
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .t_section1 .line {
+    width: 33%;
+    right: 5%;
+    top: 45%;
   }
 }
