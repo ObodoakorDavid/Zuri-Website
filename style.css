@@ -766,6 +766,9 @@ body {
   justify-content: space-between;
   padding: 20px 20px;
   background-color: rgb(255, 253, 245);
+  position: fixed;
+  width: 100vw;
+  z-index: 30;
 }
 
 .t_nav div {
@@ -1125,6 +1128,31 @@ body {
 .t_section6 > p:nth-of-type(2){
   padding-top: 5px;
   padding-bottom: 50px;
+}
+
+.faq_items {
+  border: 1px solid;
+  padding: 1% 5%;
+}
+
+.faq_items div p:nth-of-type(2){
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.faq_items div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.faq_items div p{
+  font-weight: bold;
+}
+
+.faq_items > p {
+  display: none;
+  text-align: left;
 }
 
 /* ===================== t_section7 ============= */
