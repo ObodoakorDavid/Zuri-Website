@@ -3,10 +3,6 @@
 let paragraph = document.querySelectorAll(".hidden_paragraph");
 let plus = document.querySelectorAll(".plus");
 
-// console.log(plus[0]);
-// console.log(paragraph[0]);
-// paragraph[0].style.display = 'block'
-
 
 plus[0].addEventListener("click", () => {
   if (!plus[0].classList.contains("active")) {
@@ -58,8 +54,3 @@ plus[4].addEventListener("click", () => {
     
 }
 });
-
-// plus[1].classList.remove("active");
-// plus[2].classList.remove("active");
-// plus[3].classList.remove("active");
-// plus[4].classList.remove("active");
